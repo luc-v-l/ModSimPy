@@ -1,0 +1,5 @@
+T, a, alpha, I, m, g, r = symbols('T a alpha I m g r')
+eq1 = Eq(a, -r * alpha)
+eq2 = Eq(T - m*g, m * a)
+eq3 = Eq(T * r, I * alpha)
+soln = solve([eq1, eq2, eq3], [T, a, alpha])
